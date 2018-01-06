@@ -1,0 +1,17 @@
+errata
+http://devops.dengler.io/
+devops subtree of serverless workshops repo
+https://github.com/awslabs/aws-serverless-workshops/tree/master/DevOps
+??
+https://github.com/awslabs/aws-sam-local
+
+
+IAM user (reset p/w if required)
+base_admin
+https://677587293304.signin.aws.amazon.com/console
+
+
+
+GIT for UNI-API
+base_admin-at-677587293304
+092ZI9K0yIDm3/czMYis5KjP/w3bWCYS20AIIv2QWnQ=
