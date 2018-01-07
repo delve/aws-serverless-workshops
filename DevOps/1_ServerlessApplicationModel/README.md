@@ -121,9 +121,11 @@ git reset --hard origin/master
 
 [SAM Local](http://docs.aws.amazon.com/lambda/latest/dg/test-sam-local.html) is the AWS CLI tool for managing Serverless applications written with [Serverless Application Model (SAM)](https://github.com/awslabs/serverless-application-model).  SAM Local can be used to test functions locally, start a local API Gateway from a SAM template, validate a SAM template, and generate sample payloads for various event sources.  
 
+If you are using AWS Cloud9 for your IDE managing SAM Local is not necessary. Please skip to the section labeled [Run API Gateway locally](#run-api-gateway-locally) and expand the Cloud9 section if you are unfamiliar with the Cloud9 IDE.
+
 ### Installation
 
-To complete this module, you will need to install SAM Local.  If you already have SAM Local installed, you can skip this section.
+To complete this module, you will need to install SAM Local.  If you already have SAM Local installed you can skip this section.
 
 #### Prerequisites
 
@@ -234,6 +236,25 @@ In this section, you will use SAM Local on your workstation to run the Unicorn A
 
 ### Run API Gateway locally
 
+<details>
+<summary><strong>
+HOW TO Run API Gateway Locally in Cloud9
+</strong></summary>
+
+1. On the left side of the IDE open the AWS Resources drawer and expand the Lambda dropdown if necessary and select ListFunction under `Local Functions`.
+
+   ![Hello re:Invent Code Changes](images/cloud9-run-api-gateway-1.png)
+
+1. Open the dropdown arrow beside the Run arrow button then select `Run APIGateway Local`. Click on the Run arrow.
+
+   ![Hello Re:Invent in Browser](images/cloud9-run-api-gateway-2.png)
+
+1. A tab will open in the main workspace. When you click Run you should see Execution results like these:
+
+   ![Hello Re:Invent in Browser](images/cloud9-run-api-gateway-3.png)
+</details>
+<p>
+
 1. From the **`uni-api`** directory, run the following command:
 
    ```bash
@@ -273,7 +294,7 @@ HOW TO update code and verify results (expand for details)
 
    ![Hello re:Invent Code Changes](images/hello-reinvent.png)
 
-1. Refresh the browser and confirm that you see the output below:
+1. Refresh the browser or re-Run the execution tab in Cloud9 and confirm that you see the output below:
 
    ![Hello Re:Invent in Browser](images/browser-hello-reinvent.png)
 </details>
