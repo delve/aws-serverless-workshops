@@ -19,3 +19,27 @@ base_admin-at-677587293304
 
 
 go back and update devops step 0 for cloud9
+
+
+all the codecommit seed templates need to get a .application.json file for cloud9 that looks roughly like this (where RestApiId comes from the API gateway ID visible in the breadcrumb trail on the console)
+{
+    "DeploymentMethod": "cloudformation",
+    "RestApiId": "sbtrn08vg7",
+    "Functions": {
+        "uni-api-update": {
+            "PhysicalId": {
+                "us-west-2": "uni-api-update"
+            }
+        },
+        "uni-api-read": {
+            "PhysicalId": {
+                "us-west-2": "uni-api-read"
+            }
+        },
+        "uni-api-list": {
+            "PhysicalId": {
+                "us-west-2": "uni-api-list"
+            }
+        }
+    }
+}
