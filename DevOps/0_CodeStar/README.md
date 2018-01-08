@@ -72,11 +72,24 @@ Once you've chosen a region, you should deploy all of the resources for this wor
 
     ![CodeStar 6](images/codestar-6.png)
 
-1. The next screen asks how you will edit your project code.  You will come back to this configuration later in this module and can click the **Skip** button in the lower right corner of the browser window to proceed.
+1. The next screen asks how you will edit your project code. 
+    <details>
+    <summary><strong>Cloud9 Instructions (expand for details)</strong></summary><p>
+
+    1. Select `AWS Cloud9` and click **Next**.
+
+        ![CodeStar 7 Cloud9 1](images/codestar-7-cloud9-1.png)
+
+    1. Select the instance type for your IDE. The free tier eligible type is sufficient for this lab. Click **Next**.
+
+        ![CodeStar 7 Cloud9 2](images/codestar-7-cloud9-2.png)
+
+    </p></details>
+    You will come back to this configuration later in this module and can click the **Skip** button in the lower right corner of the browser window to proceed.
 
     ![CodeStar 7](images/codestar-7.png)
 
-1. The screen below is your CodeStar project dashboard.  After creating a new project, there will be a short delay as CodeStar provisions the resources for CodeCommit, CodeBuild, CodePipeline, and additional resources related to your project template, Lambda functions in this case.  When the progress bar in the upper right of the browser window reaches 100% complete, the provisioning phase of project creation is complete.
+1. The screen below is your CodeStar project dashboard.  After creating a new project, there will be a short delay as CodeStar provisions the resources for CodeCommit, CodeBuild, CodePipeline, additional resources related to your project template, Lambda functions in this case, and possibly your Cloud9 IDE instance.  When the progress bar(s) in the upper right of the browser window reaches 100% complete, the provisioning phase of project creation is complete.
 
     ![CodeStar 8](images/codestar-8.png)
 
@@ -100,6 +113,8 @@ Once you've chosen a region, you should deploy all of the resources for this wor
 Congratulations!  You have successfully create a serverless web service project using CodeStar.  In the next section, you will use a Git client to clone the repository to your workstation.
 
 ## Clone CodeCommit Git Repository
+
+**Note:** For Cloud9 users this step is not necessary because the CodeCommit repository is cloned to your IDE instance(s) during provisioning.
 
 **Goal:** From the CodeStar dashboard for the `uni-api` project, find the CodeCommit instructions to clone the Git repository to your local workstation.
 
